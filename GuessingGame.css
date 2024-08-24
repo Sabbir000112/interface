@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  color: #4a90e2;
+  font-size: 2.5em;
+  text-shadow: 2px 2px #aaa;
+  margin-bottom: 20px;
+}
+
+#game {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+}
+
+#game div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 1em;
+  text-align: center;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 50%;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+#numberFeedback, #alphabetFeedback {
+  margin-top: 20px;
+  font-style: italic;
+  color: #d9534f;
+  font-size: 1.2em;
+}
+
+#numberFeedback p, #alphabetFeedback p {
+  margin: 5px 0;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+#gameTypeDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ /* Other existing styles */
+
+#numberFeedback, #alphabetFeedback {
+  margin-top: 20px;
+  font-style: italic;
+  color: #d9534f;
+  font-size: 1.2em;
+}
+
+.blink {
+  animation: blink-animation 0.5s ease-in-out;
+}
+
+@keyframes blink-animation {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}

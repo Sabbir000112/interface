@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="snake.css">
+    
+</head>
+<body>
+    <h1>SNAKE GAME!</h1>
+    <div id="scoreboard">
+        <p>Score: <span id="score">0</span></p>
+        <p>High Score: <span id="highScore">0</span></p>
+        <p id="level">Level: 1</p>
+    </div>
+    <canvas id="snake" width="512" height="512"></canvas>
+    <button id="multiplayerButton" onclick="toggleMultiplayer()">Toggle Multiplayer</button>
+    <script defer src="Snake.js"></script>
+</body>
+</html>
